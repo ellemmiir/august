@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssbeautify": "^3.0.1",
+    "gulp-fonter": "^0.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^5.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-strip-css-comments": "^2.0.0",
+    "gulp-svg-sprite": "^2.0.3",
+    "gulp-ttf2woff2": "^4.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.0",
+    "panini": "^1.7.2",
+    "sass": "^1.80.3"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "locomotive-scroll": "^5.0.1"
+  }
+}

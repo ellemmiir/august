@@ -1,0 +1,43 @@
+$maxWidth: 1200;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $addSize * 0.7;
+
+    @media (max-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+    }
+
+    @media (min-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+    }
+}
+
+// @include adaptiv-font(120, 50);
+
+@media (max-width: 1600px) {
+
+}
+
+
+/* Large desktops and laptops */
+/* Portrait tablets and medium desktops */
+@media (max-width: 1200px) {
+
+}
+
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+
+}
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {}

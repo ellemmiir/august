@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/style.min.css">
+
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="header__box">
+        <a href="/" class="logo">August Studio</a>
+        <div class="header__contacts">
+          <a class="header__contacts-link" href="tel:+79590158051"
+            >+7 (959) 015-80-51</a
+          >
+          <a class="header__contacts-link" href="tel:+79590158051"
+            >+7 (938) 015-80-51</a
+          >
+          <a class="header__contacts-link" href="mailto:hello@august.studio"
+            >hello@august.studio</a
+          >
+        </div>
+      </div>
+  
+      <nav class="header__nav">
+        <a class="header__nav-link" href="#">Цены</a>
+        <a href="#" class="btn accent">Начать проект</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <!-- ============================================================
+           ХЕРОЙ
+           ============================================================ -->
+  <section class="page-hero page-hero--type">
+    <div class="container page-hero__inner">
+      <h1>Лендинг (посадочная страница)</h1>
+      <p class="page-hero__subtitle">
+        Одностраничный сайт для одной цели: продать товар или услугу.
+      </p>
+      <div class="page-hero__meta">
+        <span class="tag">#продажи</span>
+        <span class="tag">#конверсия</span>
+        <span class="tag">#реклама</span>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ============================================================
+           ОСНОВНОЙ КОНТЕНТ
+           ============================================================ -->
+  <section class="page-content">
+    <div class="container page-content__inner">
+      <!-- ===== ЧТО ЭТО ===== -->
+      <div class="content-block content-block--intro">
+        <h2>Что такое лендинг и зачем он нужен</h2>
+        <p>
+          Лендинг — это сайт с одной страницей. Вся информация на нём подчинена
+          одной цели: чтобы пользователь сделал целевое действие — купил, оставил
+          заявку, записался на консультацию.
+        </p>
+        <p>
+          Он отлично работает для запуска нового продукта, услуги, акции или сбора
+          контактов. Идеальный вариант, если нужно быстро протестировать гипотезу
+          или усилить рекламную кампанию.
+        </p>
+      </div>
+  
+      <!-- ===== КОМУ ПОДХОДИТ ===== -->
+      <div class="content-block">
+        <h3>Кому подойдёт лендинг</h3>
+        <ul class="feature-list">
+          <li>Предпринимателям, которые запускают новый продукт</li>
+          <li>Инфобизнесменам для записи на курсы/вебинары</li>
+          <li>Сервисным компаниям (клининг, ремонт, консультации)</li>
+          <li>Стартапам и тестовым проектам</li>
+        </ul>
+      </div>
+  
+      <!-- ===== ЧЕМ ОТЛИЧАЕТСЯ ===== -->
+      <div class="content-block">
+        <h3>Чем лендинг отличается от обычного сайта</h3>
+        <ul>
+          <li>
+            <strong>Одна страница</strong> — не нужно листать по разделам, вся
+            информация на виду.
+          </li>
+          <li>
+            <strong>Одна цель</strong> — максимум внимания на нужном действии
+            (кнопка, форма).
+          </li>
+          <li>
+            <strong>Быстрая разработка</strong> — можно запустить за 1–2 недели.
+          </li>
+          <li>
+            <strong>Дешевле</strong> — разработка лендинга обходится дешевле, чем
+            полноценного сайта.
+          </li>
+        </ul>
+      </div>
+  
+      <!-- ===== КЛЮЧЕВЫЕ БЛОКИ ===== -->
+      <div class="content-block">
+        <h3>Из чего состоит лендинг</h3>
+        <ul>
+          <li>Главный экран с оффером и призывом</li>
+          <li>Блок с преимуществами</li>
+          <li>Отзывы клиентов</li>
+          <li>Стоимость и варианты</li>
+          <li>Форма захвата и контакты</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ============================================================
+           ФОРМА ОБРАТНОЙ СВЯЗИ
+           ============================================================ -->
+  <section class="contacts" id="contacts">
+    <div class="container contacts__inner">
+      <div class="contacts__text">
+        <h2>Расскажите о вашем проекте</h2>
+        <p>
+          Оставьте заявку, и мы свяжемся с вами в течение часа, чтобы обсудить
+          идею и ответить на все вопросы.
+        </p>
+      </div>
+      <form class="contacts__form" action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Ваше имя</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Например, Александр"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">Телефон</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+7 (999) 123-45-67"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="mail@example.com"
+            required
+          />
+        </div>
+        <div class="form-group form-group--full">
+          <label for="message">Расскажите о проекте</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Что нужно сделать? Сроки? Бюджет?"
+          ></textarea>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="file">Прикрепить файл (ТЗ, референсы, бриф)</label>
+          <input type="file" id="file" name="file" />
+        </div>
+        <button type="submit" class="btn btn--primary btn--large">
+          Отправить заявку
+        </button>
+      </form>
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <a href="/" class="logo">August Studio</a>
+        <p>Сложные штуки простыми словами</p>
+      </div>
+  
+      <div class="footer__col">
+        <h4>Навигация</h4>
+        <a href="#services">Услуги</a>
+        <a href="#pricing">Цены</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+  
+      <div class="footer__col">
+        <h4>Контакты</h4>
+        <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+        <a href="mailto:hello@august.studio">hello@august.studio</a>
+        <p>Telegram: @august_studio</p>
+      </div>
+  
+      <div class="footer__col footer__col--social">
+        <h4>Мы в соцсетях</h4>
+        <a href="#">Telegram-канал</a>
+        <a href="#">Instagram</a>
+        <a href="#">Behance</a>
+      </div>
+    </div>
+  
+    <div class="footer__bottom">
+      <p>© 2025 August Studio. Все права защищены.</p>
+    </div>
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>

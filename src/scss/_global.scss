@@ -1,0 +1,118 @@
+body {
+  // background-color: $black;
+  @extend %regular;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $black;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1400px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  background-color: $black;
+  color: $white !important;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-2px);
+  }
+  // &--outline {
+  //   &:hover {
+  //   }
+  // }
+}
+
+a {
+  // @extend %semibold;
+  color: $black;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.title {
+  @extend %semibold;
+  font-size: 120px;
+  line-height: 1;
+}
+
+.accent {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  will-change: filter, background-position;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    background-size: 400% 400%;
+    z-index: -1;
+    border-radius: inherit;
+    filter: blur(8px);
+    animation: accent-glowing 15s linear infinite;
+    opacity: 0;
+    transition:
+      opacity 0.5s ease,
+      filter 0.5s ease;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    border-radius: inherit;
+    z-index: -1;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0.9;
+      animation: accent-glowing 15s linear infinite;
+    }
+  }
+}
+
+@keyframes accent-glowing {
+  0% {
+    background-position: 0% 50%;
+    filter: blur(8px);
+  }
+  50% {
+    background-position: 100% 50%;
+    filter: blur(12px);
+  }
+  100% {
+    background-position: 0% 50%;
+    filter: blur(8px);
+  }
+}
