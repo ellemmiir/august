@@ -13238,11 +13238,11 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("state:", state);
 
     if (!validateStep(currentStep)) {
-      console.log("❌ VALIDATION FAILED for step", currentStep);
+      console.log("VALIDATION FAILED for step", currentStep);
       return;
     }
 
-    console.log("✅ Validation passed");
+    console.log("Validation passed");
 
     if (currentStep === totalSteps) {
       closeModal();
@@ -13331,7 +13331,7 @@ document.addEventListener("DOMContentLoaded", function () {
     list.innerHTML = items.map((item) => `<li>• ${item}</li>`).join("");
   }
 
-  // === Обработчики ===
+  // Обработчики
 
   openBtns.forEach((btn) => btn.addEventListener("click", openModal));
 
@@ -13345,7 +13345,6 @@ document.addEventListener("DOMContentLoaded", function () {
   footerBack.addEventListener("click", prevStep);
   nextBtn.addEventListener("click", nextStep);
 
-  // Шаг 1: выбор типа сайта
   document.querySelectorAll(".option-card").forEach((card) => {
     card.addEventListener("click", function () {
       document
@@ -13353,21 +13352,19 @@ document.addEventListener("DOMContentLoaded", function () {
         .forEach((c) => c.classList.remove("active"));
       this.classList.add("active");
       state.siteType = this.dataset.value;
-      console.log("✅ siteType selected:", state.siteType);
+      console.log("siteType selected:", state.siteType);
     });
   });
 
-  // 🔥 ИСПРАВЛЕННЫЙ ОБРАБОТЧИК С МАППИНГОМ
   document.querySelectorAll(".step-btn").forEach((btn) => {
     btn.addEventListener("click", function () {
       const group = this.dataset.group;
       const value = this.dataset.value;
 
-      // 🔥 МАППИНГ ДЛЯ ВСЕХ ГРУПП
       const stateKeyMap = {
         specs: "hasSpecs",
         design: "hasDesign",
-        responsive: "needsResponsive", // 🔥 ДОБАВЛЕНО!
+        responsive: "needsResponsive",
         functionality: "functionality",
         urgency: "urgency",
       };
@@ -13382,7 +13379,7 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.add("active");
 
       state[stateKey] = value;
-      console.log(`✅ State updated: ${stateKey} = ${value}`);
+      console.log(`State updated: ${stateKey} = ${value}`);
       console.log("State after update:", state);
 
       const hint = this.closest(".step-group")?.querySelector(".step-hint");
@@ -13437,7 +13434,6 @@ document.addEventListener("DOMContentLoaded", function () {
     question.addEventListener("click", function () {
       const isActive = item.classList.contains("active");
 
-      // Закрыть все другие
       faqItems.forEach((otherItem) => {
         if (otherItem !== item && otherItem.classList.contains("active")) {
           otherItem.classList.remove("active");
@@ -13446,16 +13442,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
-      // Переключить текущий
       item.classList.toggle("active");
 
       if (isActive) {
-        // Закрываем
         answer.style.maxHeight = "0px";
       } else {
-        // Открываем — сначала даём браузеру время, чтобы применить класс,
-        // потом устанавливаем высоту на основе scrollHeight
-        // Используем requestAnimationFrame для корректного расчёта
         requestAnimationFrame(() => {
           answer.style.maxHeight = answer.scrollHeight + "px";
         });
@@ -13465,7 +13456,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // ======== Инициализация Locomotive ========
   const scroll = new LocomotiveScroll({
     smooth: true,
     multiplier: 0.7,

@@ -38,7 +38,7 @@
 
   
   <main>
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="container hero__inner">
         <div class="hero__content">
           <span class="hero__badge">August Studio</span>
@@ -54,6 +54,23 @@
             <a href="#" id="calculator-open-btn" class="btn accent">
               Рассчитать стоимость
             </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  
+    <section class="hero">
+      <div class="container hero__inner">
+          <h1 class="hero__title">august</h1>
+          <span class="hero__badge">сложные вещи простыми словами</span>
+          <p class="hero__subtitle">
+             Мы создаём сайты и говорим на одном языке с теми, кто приходит с готовым проектом, с теми, кто ещё ищет путь, и с теми, у кого есть только идея и желание её воплотить.
+          </p>
+          <div class="hero__actions">
+            <a href="#" id="calculator-open-btn" class="hero__btn btn accent">
+              Рассчитать стоимость
+            </a>
+            <a href="#form">Написать нам</a>
           </div>
         </div>
       </div>
@@ -462,12 +479,10 @@
       </div>
     </section>
   
-    <!-- ==================== ПРОЕКТЫ (ПОРТФОЛИО) ==================== -->
     <section class="projects slide" id="projects">
       <div class="container projects__inner">
         <h2>Наши проекты</h2>
   
-        <!-- Проект 1 (реальный) -->
         <div class="project-item">
           <a href="project.html" class="project-image">
             <img src="images/project-1.png" alt="Сайт компании N" />
@@ -491,7 +506,6 @@
           </div>
         </div>
   
-        <!-- Проект 2 (учебный или будущий) -->
         <div class="project-item">
           <a href="project.html" class="project-image">
             <img src="images/project-1.png" alt="Сайт компании M" />
@@ -509,7 +523,6 @@
           </div>
         </div>
   
-        <!-- Проект 3 (заглушка, если нет) -->
         <div class="project-item project-item--coming">
           <div class="project-image project-image--placeholder">
             <span>Скоро здесь появится<br />новый проект</span>
@@ -521,8 +534,6 @@
         </div>
       </div>
     </section>
-  
-    <!-- ==================== ОТЗЫВЫ (закомментированы) ==================== -->
   
     <section class="reviews slide" id="reviews">
       <div class="container reviews__inner">
@@ -536,10 +547,8 @@
       </div>
     </section>
   
-    <!-- ==================== ФОРМА ОБРАТНОЙ СВЯЗИ ==================== -->
     <section class="contacts slide" id="contacts">
       <div class="container contacts__inner">
-        <!-- ЛЕВАЯ ЧАСТЬ: текст + контакты -->
         <div class="contacts__text">
           <h2>Расскажите о вашем проекте</h2>
           <p>
@@ -569,7 +578,6 @@
           </div>
         </div>
   
-        <!-- ПРАВАЯ ЧАСТЬ: форма -->
         <form class="contacts__form" action="#" method="POST">
           <div class="form-row">
             <div class="form-group">
@@ -763,11 +771,9 @@
       </div>
     </section>
   
-    <!-- Модальное окно калькулятора -->
     <div class="calculator-modal" id="calculator-modal">
       <div class="calculator-modal__overlay" id="calculator-overlay"></div>
       <div class="calculator-modal__content">
-        <!-- Шапка -->
         <div class="calculator-header">
           <div class="calculator-header__left">
             <button class="calculator-back" id="calculator-back" disabled>
@@ -815,9 +821,7 @@
           </button>
         </div>
   
-        <!-- Тело калькулятора -->
         <div class="calculator-body" id="calculator-body">
-          <!-- Шаг 1: Тип сайта -->
           <div class="calculator-step active" data-step="1">
             <h3 class="step-title">Выберите тип сайта</h3>
             <div class="step-options">
@@ -856,7 +860,6 @@
             </div>
           </div>
   
-          <!-- Шаг 2: Документация и дизайн -->
           <div class="calculator-step" data-step="2">
             <h3 class="step-title">Документация и дизайн</h3>
             <div class="step-group">
@@ -891,7 +894,6 @@
             </div>
           </div>
   
-          <!-- Шаг 3: Детали проекта -->
           <div class="calculator-step" data-step="3">
             <h3 class="step-title">Детали проекта</h3>
             <div class="step-group" id="page-count-group" style="display: none">
@@ -946,7 +948,6 @@
             </div>
           </div>
   
-          <!-- Шаг 4: Сроки -->
           <div class="calculator-step" data-step="4">
             <h3 class="step-title">Сроки разработки</h3>
             <div class="step-group">
@@ -968,7 +969,6 @@
             </div>
           </div>
   
-          <!-- Шаг 5: Результат -->
           <div class="calculator-step" data-step="5">
             <h3 class="step-title">Примерная стоимость</h3>
             <div class="result-block" id="result-block">
@@ -1011,7 +1011,6 @@
           </div>
         </div>
   
-        <!-- Футер с навигацией -->
         <div class="calculator-footer" id="calculator-footer">
           <button class="calculator-footer__back" id="footer-back" disabled>
             Назад
