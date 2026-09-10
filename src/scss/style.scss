@@ -1331,7 +1331,6 @@ $grey-border: rgba(0, 0, 0, 0.05);
   }
 }
 
-// -------- types ---------
 .page-hero {
   padding: 120px 0 80px;
   // background: $grey-100;
@@ -1415,81 +1414,60 @@ $grey-border: rgba(0, 0, 0, 0.05);
     }
   }
 }
-// ============================================
-// 2. TYPE FEATURES (ключевые характеристики)
-// ============================================
+// 2. ключевые характеристики
 .type-features {
   padding: 80px 0;
-  background: $white;
+  background-color: $grey-100;
 
   &__inner {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
   }
+  &__info {
+    margin-bottom: 50px;
+    align-items: center;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto 50px;
 
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1.1;
+  }
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
+  &__title--i {
+  }
 
   &__card {
+    box-shadow:
+      0 6px 20px rgba(0, 0, 0, 0.06),
+      0 2px 6px rgba(0, 0, 0, 0.04);
     position: relative;
     padding: 30px 28px 28px;
-    background: $grey-100;
+    background: white;
     border-radius: 16px;
     border: 1px solid rgba(0, 0, 0, 0.04);
-    transition: all 0.3s ease;
-    cursor: default;
-
-    &:hover {
-      transform: translateY(-4px);
-      background: $white;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-    }
-
-    // Акцентная рамка при ховере (неоновая)
-    &::before {
-      content: "";
-      position: absolute;
-      inset: -1px;
-      border-radius: 16px;
-      padding: 1px;
-      background: transparent;
-      transition: all 0.4s ease;
-      pointer-events: none;
-    }
-
-    &:hover::before {
-      background: red;
-      -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-      mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-    }
   }
 
   &__icon {
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    background: $white;
+    // width: 48px;
+    // height: 48px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // border-radius: 12px;
+    // background: $white;
     color: $black;
-    margin-bottom: 16px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-
-    svg {
-      width: 28px;
-      height: 28px;
-    }
+    margin-bottom: 30px;
+    // border: 1px solid rgba(0, 0, 0, 0.06);
   }
 
   &__card-title {
@@ -1527,12 +1505,9 @@ $grey-border: rgba(0, 0, 0, 0.05);
   }
 }
 
-// ============================================
-// 3. TYPE PROCESS (процесс разработки)
-// ============================================
+// 3. процесс разработки
 .type-process {
   padding: 80px 0;
-  background: $grey-100;
 
   &__inner {
     max-width: 1200px;
@@ -1542,7 +1517,7 @@ $grey-border: rgba(0, 0, 0, 0.05);
 
   &__row {
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-columns: 0.7fr 1.3fr;
     gap: 60px;
   }
 
@@ -1574,7 +1549,23 @@ $grey-border: rgba(0, 0, 0, 0.05);
   }
 
   &__step {
-    padding: 28px 0;
+    padding: 25px 0;
+    display: flex;
+    border-bottom: 1px solid $grey-300;
+  }
+  &__step-num {
+    display: block;
+    width: 90px;
+    // font-weight: 700;
+    @extend %semibold;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    font-size: 40px;
+    margin-right: 50px;
+    line-height: 1;
+  }
+
+  &__step-info {
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 
     &:last-child {
@@ -1588,18 +1579,18 @@ $grey-border: rgba(0, 0, 0, 0.05);
   }
 
   &__step-title {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
     color: $black;
     margin: 0 0 8px 0;
   }
 
   &__step-desc {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.7;
     color: $grey-500;
     margin: 0;
-    max-width: 500px;
+    // max-width: 500px;
   }
 
   @media (max-width: 992px) {
@@ -1634,9 +1625,7 @@ $grey-border: rgba(0, 0, 0, 0.05);
   }
 }
 
-// ============================================
-// 4. TYPE INCLUDES (что входит в работу)
-// ============================================
+// 4. что входит в работу
 .type-includes {
   padding: 80px 0;
   background: $white;
@@ -1766,9 +1755,7 @@ $grey-border: rgba(0, 0, 0, 0.05);
   }
 }
 
-// ============================================
-// 5. TYPE ADDONS (дополнительные услуги)
-// ============================================
+// 5. дополнительные услуги
 .type-addons {
   padding: 80px 0;
   background: $grey-100;

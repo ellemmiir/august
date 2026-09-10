@@ -1,249 +1,203 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/style.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title</title>
-  <link rel="stylesheet" href="../css/style.min.css">
-
-
-</head>
-
-<body>
-  <header class="header">
-    <div class="container header__inner">
-      <div class="header__box">
-        <a href="/" class="logo">August Studio</a>
-        <div class="header__contacts">
-          <a class="header__contacts-link" href="tel:+79590158051"
-            >+7 (959) 015-80-51</a
-          >
-          <a class="header__contacts-link" href="tel:+79590158051"
-            >+7 (938) 015-80-51</a
-          >
-          <a class="header__contacts-link" href="mailto:hello@august.studio"
-            >hello@august.studio</a
-          >
-        </div>
+  <body>
+    <header class="header">
+  <div class="container header__inner">
+    <div class="header__box">
+      <a href="/" class="logo">August Studio</a>
+      <div class="header__contacts">
+        <a class="header__contacts-link" href="tel:+79590158051"
+          >+7 (959) 015-80-51</a
+        >
+        <a class="header__contacts-link" href="tel:+79590158051"
+          >+7 (938) 015-80-51</a
+        >
+        <a class="header__contacts-link" href="mailto:hello@august.studio"
+          >hello@august.studio</a
+        >
       </div>
-  
-      <nav class="header__nav">
-        <a class="header__nav-link" href="#">Цены</a>
-        <a href="#" class="btn accent">Начать проект</a>
-      </nav>
     </div>
-  </header>
 
-  
-  <!-- 1. ГЕРОЙ -->
-  <section class="page-hero">
-    <div class="container page-hero__inner">
-      <div class="page-hero__box">
-        <h1 class="page-hero__title">Лендинг</h1>
+    <nav class="header__nav">
+      <a class="header__nav-link" href="#">Цены</a>
+      <a href="#" class="btn accent">Начать проект</a>
+    </nav>
+  </div>
+</header>
+ 
+<section class="page-hero">
+  <div class="container page-hero__inner">
+    <div class="page-hero__box">
+      <h1 class="page-hero__title">Лендинг</h1>
+    </div>
+    <div class="page-hero__divider"></div>
+    <div class="page-hero__box">
+      <p class="page-hero__desc">
+        Одностраничный сайт под конкретную задачу. Это может быть продажа, сбор
+        заявок, презентация продукта или просто визуальная история проекта. В
+        отличие от визитки или корпоративного сайта, здесь нет лишних страниц –
+        только одна цель и одна страница.
+      </p>
+      <!-- Как правило, лендинг продвигает один продукт — товар, услугу, мероприятие, промоакцию или даже идею. Задача у классического лендинга тоже только одна: побудить человека совершить определенное действие, например оставить телефон или почту. -->
+    </div>
+  </div>
+</section>
+
+<!-- 2. КЛЮЧЕВЫЕ ХАРАКТЕРИСТИКИ -->
+<section class="type-features">
+  <div class="container type-features__inner">
+    <div class="type-features__info">
+      <h3 class="type-features__title">Ключевые характеристики</h3>
+      <h3 class="type-features__title type-features__title--i">landing-page</h3>
+    </div>
+
+    <div class="type-features__grid">
+      <!-- Карточка 1 -->
+      <div class="type-features__card">
+        <div class="type-features__icon">
+          <img src="../images/money1.svg" alt="Иконка" />
+        </div>
+        <h4 class="type-features__card-title">Дешёвая разработка</h4>
+        <p class="type-features__card-desc">
+          Разработка одного лендинга обходится значительно дешевле, чем создание
+          полноценного корпоративного сайта
+        </p>
       </div>
-      <div class="page-hero__divider"></div>
-      <div class="page-hero__box">
-        <p class="page-hero__desc">
-          Одностраничный сайт под конкретную задачу. Это может быть продажа, сбор
-          заявок, презентация продукта или просто визуальная история проекта. В
-          отличие от визитки или корпоративного сайта, здесь нет лишних страниц –
-          только одна цель и одна страница.
+
+      <!-- Карточка 2 -->
+      <div class="type-features__card">
+        <div class="type-features__icon">
+          <img src="../images/clock.svg" alt="Иконка" />
+        </div>
+        <h4 class="type-features__card-title">Быстрый запуск</h4>
+        <p class="type-features__card-desc">
+          От идеи до публикации – 1-2 недели. Без долгих согласований и сложных
+          интеграций
+        </p>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="type-features__card">
+        <div class="type-features__icon">
+          <img src="../images/stacks.svg" alt="Иконка" />
+        </div>
+        <h4 class="type-features__card-title">Высокая конверсия</h4>
+        <p class="type-features__card-desc">
+          Структура и дизайн заточены под одно целевое действие пользователя:
+          покупка, заявка или подписка
+        </p>
+      </div>
+
+      <!-- Карточка 5 -->
+      <div class="type-features__card">
+        <div class="type-features__icon">
+          <img src="../images/bolt.svg" alt="Иконка" />
+        </div>
+        <h4 class="type-features__card-title">Быстрая загрузка</h4>
+        <p class="type-features__card-desc">
+          Минимальный код, оптимизированные изображения – страница загружается
+          быстро на любом устройстве
+        </p>
+      </div>
+
+      <!-- Карточка 4 -->
+      <div class="type-features__card">
+        <div class="type-features__icon">
+          <img src="../images/groups.svg" alt="Иконка" />
+        </div>
+        <h4 class="type-features__card-title">Фокус на целевой аудитории</h4>
+        <p class="type-features__card-desc">
+          Можно сделать 5 разных лендингов для 5 разных сегментов аудитории,
+          говоря с каждым на его языке
+        </p>
+      </div>
+
+      <!-- Карточка 6 -->
+      <div class="type-features__card">
+        <div class="type-features__icon">
+          <img src="../images/settings.svg" alt="Иконка" />
+        </div>
+        <h4 class="type-features__card-title">Простота управления</h4>
+        <p class="type-features__card-desc">
+          Лёгкое исправление ошибок, если допустили неточность в контенте. Можно
+          самостоятельно редактировать текст и изображения
         </p>
       </div>
     </div>
-  </section>
-  
-  <!-- 2. КЛЮЧЕВЫЕ ХАРАКТЕРИСТИКИ -->
-  <section class="type-features">
-    <div class="container type-features__inner">
-      <div class="type-features__grid">
-        <!-- Карточка 1 -->
-        <div class="type-features__card accent">
-          <div class="type-features__icon">
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M4 4h16v16H4z" />
-              <path d="M9 8h6M9 12h6M9 16h4" stroke-linecap="round" />
-            </svg>
-          </div>
-          <h4 class="type-features__card-title">Одностраничный</h4>
-          <p class="type-features__card-desc">
-            Вся информация на одной странице. Посетитель скроллит и принимает
-            решение.
-          </p>
-        </div>
-  
-        <!-- Карточка 2 -->
-        <div class="type-features__card accent">
-          <div class="type-features__icon">
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <path d="M12 6v6l4 2" stroke-linecap="round" />
-            </svg>
-          </div>
-          <h4 class="type-features__card-title">Быстрый запуск</h4>
-          <p class="type-features__card-desc">
-            От идеи до публикации — 1–2 недели. Без долгих согласований и сложных
-            интеграций.
-          </p>
-        </div>
-  
-        <!-- Карточка 3 -->
-        <div class="type-features__card accent">
-          <div class="type-features__icon">
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5z" />
-              <path d="M2 17l10 5 10-5" />
-              <path d="M2 12l10 5 10-5" />
-            </svg>
-          </div>
-          <h4 class="type-features__card-title">Высокая конверсия</h4>
-          <p class="type-features__card-desc">
-            Структура и дизайн заточены под целевое действие: покупка, заявка,
-            подписка.
-          </p>
-        </div>
-  
-        <!-- Карточка 4 -->
-        <div class="type-features__card accent">
-          <div class="type-features__icon">
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <rect x="2" y="3" width="20" height="14" rx="2" />
-              <path d="M8 21h8M12 17v4" stroke-linecap="round" />
-            </svg>
-          </div>
-          <h4 class="type-features__card-title">Адаптивный дизайн</h4>
-          <p class="type-features__card-desc">
-            Корректно отображается на всех устройствах — от смартфона до широкого
-            монитора.
-          </p>
-        </div>
-  
-        <!-- Карточка 5 -->
-        <div class="type-features__card accent">
-          <div class="type-features__icon">
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
-              />
-              <path d="M12 22V12" />
-              <path d="M3.3 7L12 12l8.7-5" />
-            </svg>
-          </div>
-          <h4 class="type-features__card-title">Лёгкий вес</h4>
-          <p class="type-features__card-desc">
-            Минимальный код, оптимизированные изображения — страница загружается
-            мгновенно.
-          </p>
-        </div>
-  
-        <!-- Карточка 6 -->
-        <div class="type-features__card accent">
-          <div class="type-features__icon">
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
-              />
-              <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke-linecap="round" />
-            </svg>
-          </div>
-          <h4 class="type-features__card-title">Простота управления</h4>
-          <p class="type-features__card-desc">
-            Легко редактировать текст и изображения — не нужен программист для
-            правок.
-          </p>
-        </div>
+  </div>
+</section>
+
+<!-- 3. ПРОЦЕСС РАЗРАБОТКИ -->
+<section class="type-process">
+  <div class="container type-process__inner">
+    <div class="type-process__row">
+      <div class="type-process__side">
+        <h2 class="type-process__title">
+          Процесс разработки<br /><span>landing-page</span>
+        </h2>
       </div>
-    </div>
-  </section>
-  
-  <!-- 3. ПРОЦЕСС РАЗРАБОТКИ -->
-  <section class="type-process">
-    <div class="container type-process__inner">
-      <div class="type-process__row">
-        <div class="type-process__side">
-          <h2 class="type-process__title">
-            Процесс разработки<br /><span>landing-page</span>
-          </h2>
+
+      <div class="type-process__steps">
+        <div class="type-process__step">
+          <div class="type-process__step-num">01.</div>
+          <div class="type-process__step-info">
+            <h4 class="type-process__step-title">Анализ целей и аудитории</h4>
+            <p class="type-process__step-desc">
+              Определяем ключевую цель страницы (продажа, сбор заявок, подписка)
+              и изучаем портрет целевого клиента. Это фундамент для всей
+              структуры.
+            </p>
+          </div>
         </div>
-        <div class="type-process__steps">
-          <div class="type-process__step">
-            <h4 class="type-process__step-title">1. Анализ целей и аудитории</h4>
-            <p class="type-process__step-desc">
-              Определяем ключевую цель страницы (продажа, сбор заявок, подписка) и
-              изучаем портрет целевого клиента. Это фундамент для всей структуры.
-            </p>
-          </div>
-          <div class="type-process__step">
+
+        <div class="type-process__step">
+          <div class="type-process__step-num">02.</div>
+          <div class="type-process__step-info">
             <h4 class="type-process__step-title">
-              2. Прототипирование и структура
+              Прототипирование и структура
             </h4>
             <p class="type-process__step-desc">
-              Создаём прототип: блоки, их порядок, логику перехода между секциями.
-              Продумываем путь пользователя к целевому действию.
+              Создаём прототип: блоки, их порядок, логику перехода между
+              секциями. Продумываем путь пользователя к целевому действию.
             </p>
           </div>
-          <div class="type-process__step">
-            <h4 class="type-process__step-title">3. Дизайн и визуал</h4>
+        </div>
+
+        <div class="type-process__step">
+          <div class="type-process__step-num">03.</div>
+          <div class="type-process__step-info">
+            <h4 class="type-process__step-title">Дизайн и визуал</h4>
             <p class="type-process__step-desc">
-              Отрисовываем интерфейс в чёрно-белой стилистике с акцентной неоновой
-              рамкой. Акцент на удобство чтения и выделение CTA-элементов.
+              Отрисовываем интерфейс в чёрно-белой стилистике с акцентной
+              неоновой рамкой. Акцент на удобство чтения и выделение
+              CTA-элементов.
             </p>
           </div>
-          <div class="type-process__step">
-            <h4 class="type-process__step-title">
-              4. Вёрстка и программирование
-            </h4>
+        </div>
+
+        <div class="type-process__step">
+          <div class="type-process__step-num">04.</div>
+          <div class="type-process__step-info">
+            <h4 class="type-process__step-title">Вёрстка и программирование</h4>
             <p class="type-process__step-desc">
               Чистый код на HTML, SCSS, JavaScript. Адаптивная вёрстка, плавный
               скролл, интерактивные элементы, оптимизация производительности.
             </p>
           </div>
-          <div class="type-process__step">
-            <h4 class="type-process__step-title">5. Тестирование и запуск</h4>
+        </div>
+
+        <div class="type-process__step">
+          <div class="type-process__step-num">05.</div>
+          <div class="type-process__step-info">
+            <h4 class="type-process__step-title">Тестирование и запуск</h4>
             <p class="type-process__step-desc">
               Проверяем на всех устройствах и браузерах, настраиваем аналитику,
               подключаем SSL. После вашего подтверждения — публикация.
@@ -252,251 +206,253 @@
         </div>
       </div>
     </div>
-  </section>
-  
-  <!-- 4. ЧТО ВХОДИТ В РАБОТУ -->
-  <section class="type-includes">
-    <div class="container type-includes__inner">
-      <h2 class="type-includes__title">Что входит в работу</h2>
-      <p class="type-includes__subtitle">
-        Мы не навязываем всё подряд. Это список опций, из которых вы выбираете
-        нужные.
-      </p>
-      <div class="type-includes__grid">
-        <div class="type-includes__item">
-          <span class="type-includes__check">✓</span>
-          <div>
-            <h4>Аналитика и метрики</h4>
-            <p>
-              Настройка Яндекс.Метрики, Google Analytics, отслеживание целей и
-              событий.
-            </p>
-          </div>
-        </div>
-        <div class="type-includes__item">
-          <span class="type-includes__check">✓</span>
-          <div>
-            <h4>Домен и хостинг</h4>
-            <p>
-              Поможем выбрать и подключить домен, настроить хостинг для стабильной
-              работы.
-            </p>
-          </div>
-        </div>
-        <div class="type-includes__item">
-          <span class="type-includes__check">✓</span>
-          <div>
-            <h4>SSL-сертификат</h4>
-            <p>
-              Безопасное соединение — обязательно для доверия пользователей и
-              поисковиков.
-            </p>
-          </div>
-        </div>
-        <div class="type-includes__item">
-          <span class="type-includes__check">✓</span>
-          <div>
-            <h4>Формы и интеграции</h4>
-            <p>Подключение CRM, телеграм-бота, email-уведомлений о заявках.</p>
-          </div>
-        </div>
-        <div class="type-includes__item">
-          <span class="type-includes__check">✓</span>
-          <div>
-            <h4>SEO-оптимизация</h4>
-            <p>
-              Базовые настройки: мета-теги, заголовки, семантическая вёрстка для
-              поисковиков.
-            </p>
-          </div>
-        </div>
-        <div class="type-includes__item">
-          <span class="type-includes__check">✓</span>
-          <div>
-            <h4>Правки и доработки</h4>
-            <p>Два раунда бесплатных правок после согласования дизайн-макета.</p>
-          </div>
-        </div>
-      </div>
-      <div class="type-includes__note">
-        <span class="type-includes__note-icon">ℹ</span>
-        <p>
-          Набор опций зависит от конкретной задачи. Мы не включаем в стоимость то,
-          что вам не нужно.
-        </p>
-      </div>
-    </div>
-  </section>
-  
-  <!-- 5. ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ -->
-  <section class="type-addons">
-    <div class="container type-addons__inner">
-      <h2 class="type-addons__title">Дополнительные услуги</h2>
-      <p class="type-addons__subtitle">
-        То, что можно добавить к проекту, чтобы усилить результат.
-      </p>
-      <div class="type-addons__grid">
-        <div class="type-addons__card">
-          <div class="type-addons__card-header">
-            <h4>Срочная разработка</h4>
-            <span class="type-addons__price">+50%</span>
-          </div>
-          <p>Запуск за 5–7 дней вместо стандартных 1–2 недель.</p>
-        </div>
-        <div class="type-addons__card">
-          <div class="type-addons__card-header">
-            <h4>Интеграция с CRM</h4>
-            <span class="type-addons__price">от 15 000 ₽</span>
-          </div>
-          <p>Автоматическая передача заявок в вашу CRM (AmoCRM, Bitrix и др.).</p>
-        </div>
-        <div class="type-addons__card">
-          <div class="type-addons__card-header">
-            <h4>Копирайтинг</h4>
-            <span class="type-addons__price">от 10 000 ₽</span>
-          </div>
-          <p>Написание продающих текстов для всех блоков лендинга.</p>
-        </div>
-        <div class="type-addons__card">
-          <div class="type-addons__card-header">
-            <h4>Анимация и интерактив</h4>
-            <span class="type-addons__price">от 8 000 ₽</span>
-          </div>
-          <p>Плавные переходы, параллакс-эффекты, микро-анимации.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- 6. ФОРМА ОБРАТНОЙ СВЯЗИ (такая же, как на главной) -->
-  <section class="contacts" id="contacts">
-    <div class="container contacts__inner">
-      <div class="contacts__text">
-        <h2>Расскажите о вашем проекте</h2>
-        <p>
-          Оставьте заявку, и мы свяжемся с вами в течение часа, чтобы обсудить
-          идею и ответить на все вопросы.
-        </p>
-        <div class="contacts__info">
-          <div class="contact-item">
-            <span class="contact-label">Почта</span>
-            <a href="mailto:hello@august.studio" class="contact-value"
-              >hello@august.studio</a
-            >
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">Телефоны</span>
-            <a href="tel:+79991234567" class="contact-value"
-              >+7 (999) 123-45-67</a
-            >
-            <a href="tel:+79991234567" class="contact-value"
-              >+7 (999) 123-45-67</a
-            >
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">Telegram</span>
-            <a href="#" class="contact-value">@august_studio</a>
-          </div>
-        </div>
-      </div>
-      <form class="contacts__form" action="#" method="POST">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Ваше имя</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Александр"
-              required
-            />
-          </div>
-        </div>
-        <div class="form-row form-row--two">
-          <div class="form-group">
-            <label for="phone">Телефон</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="+7 (999) 123-45-67"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="mail@example.com"
-              required
-            />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="message">Расскажите о проекте</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              placeholder="Кратко опишите, что нужно сделать..."
-            ></textarea>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group form-group--file">
-            <label for="file">Прикрепить файл (ТЗ, референсы, бриф)</label>
-            <input type="file" id="file" name="file" />
-          </div>
-        </div>
-        <button
-          type="submit"
-          class="btn btn--primary btn--large btn--full accent"
-        >
-          Отправить заявку
-        </button>
-      </form>
-    </div>
-  </section>
-  
+  </div>
+</section>
 
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__col">
-        <a href="/" class="logo">August Studio</a>
-        <p>Сложные штуки простыми словами</p>
+<!-- 4. ЧТО ВХОДИТ В РАБОТУ -->
+<section class="type-includes">
+  <div class="container type-includes__inner">
+    <h2 class="type-includes__title">Что входит в работу</h2>
+    <p class="type-includes__subtitle">
+      Мы не навязываем всё подряд. Это список опций, из которых вы выбираете
+      нужные.
+    </p>
+    <div class="type-includes__grid">
+      <div class="type-includes__item">
+        <span class="type-includes__check">✓</span>
+        <div>
+          <h4>Аналитика и метрики</h4>
+          <p>
+            Настройка Яндекс.Метрики, Google Analytics, отслеживание целей и
+            событий.
+          </p>
+        </div>
       </div>
-  
-      <div class="footer__col">
-        <h4>Навигация</h4>
-        <a href="#services">Услуги</a>
-        <a href="#pricing">Цены</a>
-        <a href="#projects">Проекты</a>
-        <a href="#contacts">Контакты</a>
+      <div class="type-includes__item">
+        <span class="type-includes__check">✓</span>
+        <div>
+          <h4>Домен и хостинг</h4>
+          <p>
+            Поможем выбрать и подключить домен, настроить хостинг для стабильной
+            работы.
+          </p>
+        </div>
       </div>
-  
-      <div class="footer__col">
-        <h4>Контакты</h4>
-        <a href="tel:+79991234567">+7 (999) 123-45-67</a>
-        <a href="mailto:hello@august.studio">hello@august.studio</a>
-        <p>Telegram: @august_studio</p>
+      <div class="type-includes__item">
+        <span class="type-includes__check">✓</span>
+        <div>
+          <h4>SSL-сертификат</h4>
+          <p>
+            Безопасное соединение — обязательно для доверия пользователей и
+            поисковиков.
+          </p>
+        </div>
       </div>
-  
-      <div class="footer__col footer__col--social">
-        <h4>Мы в соцсетях</h4>
-        <a href="#">Telegram-канал</a>
-        <a href="#">Instagram</a>
-        <a href="#">Behance</a>
+      <div class="type-includes__item">
+        <span class="type-includes__check">✓</span>
+        <div>
+          <h4>Формы и интеграции</h4>
+          <p>Подключение CRM, телеграм-бота, email-уведомлений о заявках.</p>
+        </div>
+      </div>
+      <div class="type-includes__item">
+        <span class="type-includes__check">✓</span>
+        <div>
+          <h4>SEO-оптимизация</h4>
+          <p>
+            Базовые настройки: мета-теги, заголовки, семантическая вёрстка для
+            поисковиков.
+          </p>
+        </div>
+      </div>
+      <div class="type-includes__item">
+        <span class="type-includes__check">✓</span>
+        <div>
+          <h4>Правки и доработки</h4>
+          <p>Два раунда бесплатных правок после согласования дизайн-макета.</p>
+        </div>
       </div>
     </div>
-  
-    <div class="footer__bottom">
-      <p>© 2025 August Studio. Все права защищены.</p>
+    <div class="type-includes__note">
+      <span class="type-includes__note-icon">ℹ</span>
+      <p>
+        Набор опций зависит от конкретной задачи. Мы не включаем в стоимость то,
+        что вам не нужно.
+      </p>
     </div>
-  </footer>
-  
-  <script src="js/main.js"></script>
-</body>
+  </div>
+</section>
+
+<!-- 5. ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ -->
+<section class="type-addons">
+  <div class="container type-addons__inner">
+    <h2 class="type-addons__title">Дополнительные услуги</h2>
+    <p class="type-addons__subtitle">
+      То, что можно добавить к проекту, чтобы усилить результат.
+    </p>
+    <div class="type-addons__grid">
+      <div class="type-addons__card">
+        <div class="type-addons__card-header">
+          <h4>Срочная разработка</h4>
+          <span class="type-addons__price">+50%</span>
+        </div>
+        <p>Запуск за 5–7 дней вместо стандартных 1–2 недель.</p>
+      </div>
+      <div class="type-addons__card">
+        <div class="type-addons__card-header">
+          <h4>Интеграция с CRM</h4>
+          <span class="type-addons__price">от 15 000 ₽</span>
+        </div>
+        <p>Автоматическая передача заявок в вашу CRM (AmoCRM, Bitrix и др.).</p>
+      </div>
+      <div class="type-addons__card">
+        <div class="type-addons__card-header">
+          <h4>Копирайтинг</h4>
+          <span class="type-addons__price">от 10 000 ₽</span>
+        </div>
+        <p>Написание продающих текстов для всех блоков лендинга.</p>
+      </div>
+      <div class="type-addons__card">
+        <div class="type-addons__card-header">
+          <h4>Анимация и интерактив</h4>
+          <span class="type-addons__price">от 8 000 ₽</span>
+        </div>
+        <p>Плавные переходы, параллакс-эффекты, микро-анимации.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. ФОРМА ОБРАТНОЙ СВЯЗИ (такая же, как на главной) -->
+<section class="contacts" id="contacts">
+  <div class="container contacts__inner">
+    <div class="contacts__text">
+      <h2>Расскажите о вашем проекте</h2>
+      <p>
+        Оставьте заявку, и мы свяжемся с вами в течение часа, чтобы обсудить
+        идею и ответить на все вопросы.
+      </p>
+      <div class="contacts__info">
+        <div class="contact-item">
+          <span class="contact-label">Почта</span>
+          <a href="mailto:hello@august.studio" class="contact-value"
+            >hello@august.studio</a
+          >
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Телефоны</span>
+          <a href="tel:+79991234567" class="contact-value"
+            >+7 (999) 123-45-67</a
+          >
+          <a href="tel:+79991234567" class="contact-value"
+            >+7 (999) 123-45-67</a
+          >
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Telegram</span>
+          <a href="#" class="contact-value">@august_studio</a>
+        </div>
+      </div>
+    </div>
+    <form class="contacts__form" action="#" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Ваше имя</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Александр"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-row form-row--two">
+        <div class="form-group">
+          <label for="phone">Телефон</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+7 (999) 123-45-67"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="mail@example.com"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="message">Расскажите о проекте</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Кратко опишите, что нужно сделать..."
+          ></textarea>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group form-group--file">
+          <label for="file">Прикрепить файл (ТЗ, референсы, бриф)</label>
+          <input type="file" id="file" name="file" />
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="btn btn--primary btn--large btn--full accent"
+      >
+        Отправить заявку
+      </button>
+    </form>
+  </div>
+</section>
+
+ <footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__col">
+      <a href="/" class="logo">August Studio</a>
+      <p>Сложные штуки простыми словами</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Навигация</h4>
+      <a href="#services">Услуги</a>
+      <a href="#pricing">Цены</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contacts">Контакты</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Контакты</h4>
+      <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+      <a href="mailto:hello@august.studio">hello@august.studio</a>
+      <p>Telegram: @august_studio</p>
+    </div>
+
+    <div class="footer__col footer__col--social">
+      <h4>Мы в соцсетях</h4>
+      <a href="#">Telegram-канал</a>
+      <a href="#">Instagram</a>
+      <a href="#">Behance</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>© 2026 August Studio. Все права защищены.</p>
+  </div>
+</footer>
+
+<!-- <script src="js/main.js"></script> -->
+
+    <script src="../js/main.js"></script>
+  </body>
 </html>
