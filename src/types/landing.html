@@ -3,14 +3,14 @@ layout: default2
 title: Title
 ---
 
-<section class="page-hero">
-  <div class="container page-hero__inner">
-    <div class="page-hero__box">
-      <h1 class="page-hero__title">Лендинг</h1>
+<section class="type-hero">
+  <div class="container type-hero__inner">
+    <div class="type-hero__box">
+      <h1 class="type-hero__title">Лендинг</h1>
     </div>
-    <div class="page-hero__divider"></div>
-    <div class="page-hero__box">
-      <p class="page-hero__desc">
+    <div class="type-hero__divider"></div>
+    <div class="type-hero__box">
+      <p class="type-hero__desc">
         Одностраничный сайт под конкретную задачу. Это может быть продажа, сбор
         заявок, презентация продукта или просто визуальная история проекта. В
         отличие от визитки или корпоративного сайта, здесь нет лишних страниц –
@@ -105,6 +105,38 @@ title: Title
   </div>
 </section>
 
+<section class="type-who">
+  <div class="container type-who__inner">
+    <div class="type-who__grid">
+      <div class="type-who__item">
+        <h2 class="type-who__title">Кому подойдет:</h2>
+      </div>
+      <div class="type-who__item">
+        <h3 class="type-who__item-title">
+          Запускаете новый продукт или услугу
+        </h3>
+        <!-- <p class="type-who__item-desc">Нужен быстрый старт без многостраничного сайта</p> -->
+      </div>
+      <div class="type-who__item">
+        <h3 class="type-who__item-title">Запускаете рекламу</h3>
+        <!-- <p class="type-who__item-desc">Лендинг даёт максимальную конверсию с платного трафика</p> -->
+      </div>
+      <div class="type-who__item">
+        <h3 class="type-who__item-title">Тестируете нишу</h3>
+        <!-- <p class="type-who__item-desc">Не хотите вкладываться в большой сайт, пока не проверите спрос</p> -->
+      </div>
+      <div class="type-who__item">
+        <h3 class="type-who__item-title">Проводите акцию или вебинар</h3>
+        <!-- <p class="type-who__item-desc">Нужна отдельная страница под событие</p> -->
+      </div>
+      <div class="type-who__item">
+        <h3 class="type-who__item-title">У вас одна услуга</h3>
+        <!-- <p class="type-who__item-desc">Не нужно распылять внимание клиента по разделам</p> -->
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- 3. ПРОЦЕСС РАЗРАБОТКИ -->
 <section class="type-process">
   <div class="container type-process__inner">
@@ -189,44 +221,51 @@ title: Title
     </p>
     <div class="type-includes__grid">
       <div class="type-includes__item">
-        <span class="type-includes__check">✓</span>
+        <div class="type-includes__icon">
+          <img src="../images/settings.svg" alt="Иконка" />
+        </div>
         <div>
-          <h4>Аналитика и метрики</h4>
-          <p>
-            Настройка Яндекс.Метрики, Google Analytics, отслеживание целей и
-            событий.
-          </p>
+          <h4>Адаптивная верстка</h4>
+          <p>Удобный интерфейс и корректное отображение на любом устройстве</p>
         </div>
       </div>
       <div class="type-includes__item">
-        <span class="type-includes__check">✓</span>
+        <div class="type-includes__icon">
+          <img src="../images/settings.svg" alt="Иконка" />
+        </div>
         <div>
           <h4>Домен и хостинг</h4>
           <p>
             Поможем выбрать и подключить домен, настроить хостинг для стабильной
-            работы.
+            работы
           </p>
         </div>
       </div>
       <div class="type-includes__item">
-        <span class="type-includes__check">✓</span>
+        <div class="type-includes__icon">
+          <img src="../images/settings.svg" alt="Иконка" />
+        </div>
         <div>
           <h4>SSL-сертификат</h4>
           <p>
-            Безопасное соединение — обязательно для доверия пользователей и
+            Безопасное соединение – обязательно для доверия пользователей и
             поисковиков.
           </p>
         </div>
       </div>
       <div class="type-includes__item">
-        <span class="type-includes__check">✓</span>
+        <div class="type-includes__icon">
+          <img src="../images/settings.svg" alt="Иконка" />
+        </div>
         <div>
-          <h4>Формы и интеграции</h4>
-          <p>Подключение CRM, телеграм-бота, email-уведомлений о заявках.</p>
+          <h4>Тестировка</h4>
+          <p>Проверка на устройствах и браузерах</p>
         </div>
       </div>
       <div class="type-includes__item">
-        <span class="type-includes__check">✓</span>
+        <div class="type-includes__icon">
+          <img src="../images/settings.svg" alt="Иконка" />
+        </div>
         <div>
           <h4>SEO-оптимизация</h4>
           <p>
@@ -236,10 +275,21 @@ title: Title
         </div>
       </div>
       <div class="type-includes__item">
-        <span class="type-includes__check">✓</span>
+        <div class="type-includes__icon">
+          <img src="../images/settings.svg" alt="Иконка" />
+        </div>
         <div>
           <h4>Правки и доработки</h4>
           <p>Два раунда бесплатных правок после согласования дизайн-макета.</p>
+        </div>
+      </div>
+      <div class="type-includes__item">
+        <div class="type-includes__icon">
+          <img src="../images/settings.svg" alt="Иконка" />
+        </div>
+        <div>
+          <h4>Обучение</h4>
+          <p>Короткая инструкция или созвон по управлению</p>
         </div>
       </div>
     </div>
@@ -268,6 +318,7 @@ title: Title
         </div>
         <p>Запуск за 5–7 дней вместо стандартных 1–2 недель.</p>
       </div>
+
       <div class="type-addons__card">
         <div class="type-addons__card-header">
           <h4>Интеграция с CRM</h4>
@@ -284,10 +335,58 @@ title: Title
       </div>
       <div class="type-addons__card">
         <div class="type-addons__card-header">
-          <h4>Анимация и интерактив</h4>
+          <h4>Аналитика и метрики</h4>
           <span class="type-addons__price">от 8 000 ₽</span>
         </div>
-        <p>Плавные переходы, параллакс-эффекты, микро-анимации.</p>
+        <p>
+          Настройка Яндекс.Метрики, Google Analytics, отслеживание целей и
+          событий.
+        </p>
+      </div>
+      <div class="type-addons__card">
+        <div class="type-addons__card-header">
+          <h4>Формы и дополнительные интеграции</h4>
+          <span class="type-addons__price">от 8 000 ₽</span>
+        </div>
+        <p>
+          Подключение ботов и email-уведомлений. Интеграция со сторонними
+          сервисами: платежи, календари и так далее
+        </p>
+      </div>
+      <div class="type-addons__card">
+        <div class="type-addons__card-header">
+          <h4>Платные плагины/шрифты/фотостоки</h4>
+          <span class="type-addons__price">от 8 000 ₽</span>
+        </div>
+        <p>Если вы хотите добавить уникальности вашему проекту</p>
+      </div>
+      <div class="type-addons__card">
+        <div class="type-addons__card-header">
+          <h4>Мультиязычность</h4>
+          <span class="type-addons__price">от 8 000 ₽</span>
+        </div>
+        <p>Вторая языковая версия</p>
+      </div>
+      <div class="type-addons__card">
+        <div class="type-addons__card-header">
+          <h4>Интерактив и анимации</h4>
+          <span class="type-addons__price">от 8 000 ₽</span>
+        </div>
+        <p>Сложные сценарии и кастомные эффекты</p>
+      </div>
+      <div class="type-addons__card">
+        <div class="type-addons__card-header">
+          <h4>Поддержка и обслуживание</h4>
+          <span class="type-addons__price">от 8 000 ₽</span>
+        </div>
+        <p>Обновления, бэкапы, мелкие правки</p>
+      </div>
+      <div class="type-addons__card">
+        <div class="type-addons__card-header">
+          <h4>Продвижение</h4>
+          <span class="type-addons__price">от 8 000 ₽</span>
+        </div>
+        <p>Реклама, SEO-оптимищация поверх базы</p>
       </div>
     </div>
   </div>
